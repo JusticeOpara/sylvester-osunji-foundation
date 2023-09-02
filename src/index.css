@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+ 
 }
 
 html,
@@ -16,5 +16,5 @@ body,
 :root {
   scroll-behavior: smooth;
   box-sizing: border-box;
-
+  
 }

@@ -8,12 +8,12 @@ const App = () => {
   return (
     <BrowserRouter>
 
-      <div className=''>
+      {/* <div className=''> */}
         <Navbar />
         <Home/>
 
-        <Footer />
-      </div>
+         <Footer /> 
+      {/* </div> */}
 
     </BrowserRouter>
 

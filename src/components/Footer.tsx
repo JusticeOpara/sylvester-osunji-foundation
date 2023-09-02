@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Footer:React.FC = () => {
+const Footer: React.FC = () => {
   return (
-    <div>Footer</div>
+    <div className='w-full h-[85vh] bg-zinc-500'>
+      <div>
+
+      </div>
+    </div>
   )
 }
 

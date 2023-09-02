@@ -7,6 +7,11 @@ export default {
         'hero-pattern': "url('./assets/images/hero-frame.png')",
        
       },
+
+      fontFamily:{
+        'inter': ['Inter', 'sans-serif'],
+        'openSan': ['OpenSans', 'sans-serif']
+      }
     },
   },
   plugins: [],
