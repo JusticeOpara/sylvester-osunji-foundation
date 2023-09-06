@@ -5,12 +5,14 @@ export default {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('./assets/images/hero-frame.png')",
-       
+         'text-background': "url('./assets/images/rectangle-white.png')"
       },
 
       fontFamily:{
         'inter': ['Inter', 'sans-serif'],
-        'openSan': ['OpenSans', 'sans-serif']
+        'openSan': ['OpenSans', 'sans-serif'],
+        'playfair': ['Playfair Display', 'serif']
+
       }
     },
   },

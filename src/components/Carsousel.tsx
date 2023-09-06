@@ -23,13 +23,12 @@ const Carsousel = () => {
     const CarouselCard: React.FC<CarouselProps> = ({ image, text }) => {
 
         return (
-            <div className="w-[767.2px] h-[345.8px] bg-stone-100 flex gap-6  items-center shadow-2xl rounded-lg p-8">
-                {/* <img src={image} className=" w-[265px] h-[276.5px] rounded" /> */}
-
+            <div className="w-[767.2px] h-[345.8px] bg-[#018ecc] opacity-80 border-[#018ECC] border-[3px] flex gap-6 items-center shadow-2xl rounded-lg p-8 ">
+              
                 {image}
 
                 <div className="bg-slatte-400 gap-3  flex flex-col">
-                    <p className="w-[389.2px] h-[120px] text-base font-medium text-start">
+                    <p className="w-[390px] h-[120px] text-base font-medium text-start">
                         {text}
                     </p>
 
@@ -48,11 +47,11 @@ const Carsousel = () => {
 
     return (
         <>
-            <div className="w-full h-[100vh] flex flex-col justify-evenly items-center bg-slate-500">
+            <div className="w-full h-[100vh] flex flex-col justify-evenly items-center bg-white">
 
-                <h1 className="font-bold text-3xl text-center">Stories</h1>
+                <h1 className="font-bold text-4xl text-center">Stories</h1>
 
-                <div className="flex flex-row items-center bg-blue-400 w-full h-[65%] gap-2">
+                <div className="flex flex-row items-center w-full h-[65%] gap-2">
                     <Swiper
                         modules={[Autoplay, Pagination, A11y]}
                         spaceBetween={isMobile ? 16 : 20}
@@ -65,7 +64,7 @@ const Carsousel = () => {
 
                             <CarouselCard
                                 text="“I got to see a different side of humanity since I started volunteering at Sylvester Osuji Foundation.
-                              I am glad and grateful for this eye opening opportunity and the chance to give my own little  impact to humanity cause”"
+                              I am glad and grateful for this eye opening opportunity and the chance to give my own little impact to humanity cause”"
                                 image={<img src={sylvester} className="w-[265px] h-[276.5px] rounded" alt="Sylvester Image" />}
                             />
 
@@ -74,7 +73,7 @@ const Carsousel = () => {
                         <SwiperSlide>
                             <CarouselCard
                                 text="“I got to see a different side of humanity since I started volunteering at Sylvester Osuji Foundation.
-                            I am glad and grateful for this eye opening opportunity and the chance to give my own little  impact to humanity cause”"
+                            I am glad and grateful for this eye opening opportunity and the chance to give my own little impact to humanity cause”"
                                 image={<img src={sylvester} className="w-[265px] h-[276.5px] rounded" alt="Sylvester Image" />}
                             />
 
@@ -83,7 +82,7 @@ const Carsousel = () => {
                         <SwiperSlide>
                             <CarouselCard
                                 text="“I got to see a different side of humanity since I started volunteering at Sylvester Osuji Foundation.
-                                    I am glad and grateful for this eye opening opportunity and the chance to give my own little  impact to humanity cause”"
+                                    I am glad and grateful for this eye opening opportunity and the chance to give my own little impact to humanity cause”"
                                 image={<img src={sylvester} className="w-[265px] h-[276.5px] rounded" alt="Sylvester Image" />}
                             />
 
@@ -92,7 +91,7 @@ const Carsousel = () => {
                         <SwiperSlide>
                             <CarouselCard
                                 text="“I got to see a different side of humanity since I started volunteering at Sylvester Osuji Foundation.
-     I am glad and grateful for this eye opening opportunity and the chance to give my own little  impact to humanity cause”"
+                              I am glad and grateful for this eye opening opportunity and the chance to give my own little impact to humanity cause”"
                                 image={<img src={sylvester} className="w-[265px] h-[276.5px] rounded" alt="Sylvester Image" />}
                             />
 

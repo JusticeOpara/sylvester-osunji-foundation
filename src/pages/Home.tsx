@@ -20,14 +20,14 @@ const Home = () => {
         <div>
             <div className="flex flex-col justify-center h-[100vh] w-full items-center bg-hero-pattern bg-no-repeat bg-cover relative overflow-hidden gap-[20px]">
 
-                <div className="w-[50%] bg-gray-500 flex-col justify-center">
+                <div className="w-[50%]  flex-col justify-center">
 
                     <p className="text-center text-[50px] leading-[56px] font-bold text-white font-openSan">
                         Empowering Lives, Enriching Communities
                     </p>
                 </div>
 
-                <p className="text-center text-sm font-bold text-white">We provide aid and support to underprivileged and impoverished communities in Africa and beyond.</p>
+                <p className="text-center text-[16px] font-bold text-white">We provide aid and support to underprivileged and impoverished communities in Africa and beyond.</p>
 
             </div>
 
@@ -53,16 +53,16 @@ const Home = () => {
             </div>
 
 
-            <div className="w-full he-[100vh] bg-zinc-500 px-[90px] py-20 flex flex-col justify-center items-center gap-10">
-                <div className="w-full h-full bg-red-500">
-                    <div className="h-full w-full bg-red-100 flex flex-row">
-                        <img src={ourValue} className="w-[552.3px] h-[366.1px] " alt="Our Vision" />
+            <div className="w-full he-[100vh] px-28 py-20 flex flex-col justify-center items-center gap-10">
+                <div className="w-full h-full">
+                    <div className="h-full w-full flex flex-row justify-center item">
+                        <img src={ourValue} className="w-[510px] he-[366.1px] h-auto " alt="Our Vision" />
 
-                        <div className="w-[552.3px] h-[366.1px]  bg-blue-100 justify-evenly flex flex-col items-center ">
+                        <div className="w-[510px] h-[366.1px] bg-white justify-evenly flex flex-col items-center ">
 
-                            <h1 className="font-bold text-[40px]">Our Vision</h1>
+                            <h1 className="font-bold text-[40px] font-openSan">Our Vision</h1>
 
-                            <p className="w-[389.4px] h-[140px] bg-slate-400 text-base font-normal">
+                            <p className="w-[389.4px] h-[140px] font-openSan text-base font-normal">
 
                                 To provide food, shelter, education & basic healthcare for women,
                                 aged men and children who are dying from hunger and abject poverty caused by global lockdown & other economic meltdown.
@@ -71,41 +71,42 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="h-full w-full bg-red-300 flex flex-row ">
+                    <div className="h-full w-full flex flex-row  justify-center">
 
-                        <div className="w-[552.3px] h-[366.1px]  bg-blue-100 justify-evenly flex flex-col items-center ">
+                        <div className="w-[510px] h-[366.1px] bg-white justify-evenly flex flex-col items-center ">
 
-                            <h1 className="font-bold text-[40px]">Our Mission</h1>
+                            <h1 className="font-bold text-[40px] font-openSan">Our Mission</h1>
 
-                            <p className="w-[389.4px] h-[140px] bg-slate-400 text-base font-normal">
+                            <p className="w-[389.4px] h-[140px] text-base font-openSan font-normal">
                                 To see a world free from hunger, sickness and pain caused by unavailability of care and
                                 love for humanity above all we want to help put an end to youth restiveness
                                 and abuse of the girlchild in Africa & the globe at large which  in most cases is caused by poverty & unemployment.
                             </p>
                         </div>
 
-                        <img src={ourMission} className="w-[552.3px] h-[366.1px] " alt="Our Vision" />
+                        <img src={ourMission} className="w-[510px] hr-[366.1px] h-auto " alt="Our Vision" />
                     </div>
 
                 </div>
 
-                <button className="bg-transparent   hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 wd-20 border-2 border-blue-500 hover:border-transparent rounded">
+                <button className="bg-transparent font-semibold text-[#0098d8] py-2 px-4 wd-20 border-2 border-[#0098d8] rounded ">
                     Learn More
+                    
                 </button>
             </div>
 
 
-            <div className="w-full h-[120vh] bg-blue-100 flex flex-col items-center justify-evenly">
+            <div className="w-full h-[120vh] bg-[#F2EFEF] flex flex-col items-center justify-evenly">
 
-                <h1 className="font-bold texfrt-[20px] text-3xl font-openSan">Founder's Note</h1>
+                <h1 className="font-bold text-3xl font-openSan">Founder's Note</h1>
 
-                <div className="flex flex-row h-">
+                <div className="flex flex-row ">
 
                     <img src={sylvester} className="w-[410.9px] h-[427.7px] bg-slate-400 rounded" />
 
                     <div className="w-[597.5px] h-[427px] bg-[#3B4293] flex flex-col justify-center items-center ">
                         <div className="h-full w-full flex flex-col justify-center items-center">
-                            <p className="text-base w-[389.2px]">
+                            <p className="text-base w-[389.2px] text-[#fff] flex items-start">
                                 “Lorem ipsum dolor sit amet consectetur. Elit sit consequat sollicitudin eget faucibus facilisis et eu aenean.
                                 Consequat tellus bibendum imperdiet feugiat nunc. Massa adipiscing odio”
                             </p>
@@ -113,7 +114,8 @@ const Home = () => {
 
 
                         <div className="flex flex-col justify-center items-center h-[76.3px] gap- w-full bg-[#000000] text-white">
-                            <p className="text-center font-medium">Slyvester Osunji</p>
+                            <p className="text-center font-semibold font-openSan text-base">Slyvester Osunji</p>
+      
                             <p className="text-sm font-normal">Founder SOF</p>
 
                         </div>
@@ -126,12 +128,12 @@ const Home = () => {
          
             <Carsousel/>
 
-            <div className="w-full h-[434px] bg-slate-400 px-28 flex flex-col justify-evenly  ">
-                <p className="font-bold text-xl font-openSan">Upcoming SOF Events</p>
+            <div className="w-full h-[434px] bg-white px-28 flex flex-col justify-evenly  ">
+                <p className="font-bold text-2xl font-openSan">Upcoming SOF Events</p>
 
-                <div className="flex gap-4">
-                    <div className="w-[546px] h-[140px] bg-blue-200 text-white shadow-xl flex ">
-                        <div className="w-[140px] h-[140px] font-inter bg-[#3B4293] flex flex-col justify-center items-center">
+                <div className="flex gap-4 text-black">
+                    <div className="w-[546px] h-[140px] text-whirte shadow-xl flex ">
+                        <div className="w-[140px] h-[140px] font-inter bg-[#3B4293] flex flex-col justify-center items-center text-white">
 
                             <p className="font-bold text-lg">JULY</p>
                             <p className="font-bold text-[44.8px] ">03</p>
@@ -145,8 +147,8 @@ const Home = () => {
                     </div>
 
 
-                    <div className="w-[546px] h-[140px] bg-blue-200 text-white shadow-xl flex ">
-                        <div className="w-[140px] h-[140px] font-inter bg-[#3B4293] flex flex-col justify-center items-center">
+                    <div className="w-[546px] h-[140px] shadow-xl flex ">
+                        <div className="w-[140px] h-[140px] font-inter bg-[#3B4293] flex flex-col justify-center items-center text-white">
 
                             <p className="font-bold text-lg">JULY</p>
                             <p className="font-bold text-[44.8px] ">03</p>

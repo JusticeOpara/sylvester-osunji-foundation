@@ -1,19 +1,25 @@
 import Navbar from './components/Navbar';
-import { BrowserRouter } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import About from './pages/About';
+import Project from './pages/Project';
 
 const App = () => {
 
   return (
     <BrowserRouter>
+      <Navbar />
+      
+      <Routes>
 
-      {/* <div className=''> */}
-        <Navbar />
-        <Home/>
+        <Route path="/" element={<Home />} />
 
-         <Footer /> 
-      {/* </div> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/project" element={<Project />} />
+
+      </Routes>
+      <Footer />
 
     </BrowserRouter>
 
