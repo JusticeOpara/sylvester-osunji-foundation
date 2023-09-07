@@ -23,7 +23,7 @@ const Carsousel = () => {
     const CarouselCard: React.FC<CarouselProps> = ({ image, text }) => {
 
         return (
-            <div className="w-[767.2px] h-[345.8px] bg-[#018ecc] opacity-80 border-[#018ECC] border-[3px] flex gap-6 items-center shadow-2xl rounded-lg p-8 ">
+            <div className="w-[767.2px] h-[345.8px] bg-[#018ecc] opac9ity-80 border-[#018ECC] border-[3px] flex gap-6 items-center shadow-2xl rounded-lg p-8 ">
               
                 {image}
 

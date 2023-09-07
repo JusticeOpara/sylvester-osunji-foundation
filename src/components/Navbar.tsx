@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
     return (
         <div className='w-full bg-white h-[80px] flex items-center font-inter fixed top-0 left-0 z-[111111] shadow' ref={headerRef}>
 
-            <div className='flex w-full justify-between px-[170px] '>
+            <div className='flex w-full justify-between px-28 '>
                 <div className='flex items-center gap-2 '>
                     <img src={NavLogo} className='w-[40px] h-[40px] rounded-2xl' />
                     <p className='text-[18px] leading-normal font-bold text-[#111] font-inter '>Sylvester Osunji Foundation(SDF)</p>
@@ -49,30 +49,30 @@ const Navbar: React.FC = () => {
                 <div className='flex gap-5'>
                     <ul className='flex list-none items-center gap-3'>
 
-                        <li className='text-[16px] font-normal '>
+                        <li className='text-[14px] font-normal '>
                             <Link to="/" className='hover:text-[#0098DB] focus:text-[#0098DB]'>
                                 Home
                             </Link>
                         </li>
 
 
-                        <li className='text-[16px] font-normal'>
+                        <li className='text-[14px] font-normal'>
                             <Link to="/about" className='hover:text-[#0098DB] focus:text-[#0098DB]'>
-                                About us
+                                AboutUs
                             </Link>
 
                         </li>
 
 
-                        <li className='text-[16px] font-normal '>
+                        <li className='text-[14px] font-normal '>
                             <Link to="/project" className='hover:text-[#0098DB] focus:text-[#0098DB]'>
                                 Projects
                             </Link>
                         </li>
                     </ul>
 
-                    <button className='rounded-lg py-[10px] px-[20px] bg-inherit flex justify-center items-center border-[#0098DB] border '>Donate
-                        <img src={donate} />
+                    <button className='rounded-lg py-[8px] px-[20px] bg-inherit text-[#0098db] flex justify-center items-center hover:text-white hover:bg-[#0098db] border-[#0098DB] border '>Donate
+                        <img src={donate} className="" alt="donate"/>
                     </button>
                 </div>
             </div>

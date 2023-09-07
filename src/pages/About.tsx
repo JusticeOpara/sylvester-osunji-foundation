@@ -54,12 +54,16 @@ const About = () => {
     <div className="w-full mt-[80px]">
       <div>
         <div className="flex flex-row justify-between items-center bg-gray-200 px-28 h-[80vh] w-full ">
-          <h1 className="text-6xl font-openSan font-bold text-[#111] w-[445.2px] bg-yellow-50">
+          <h1 className="text-6xl font-openSan font-bold text-[#111] w-[465.2px] bg-yellow-50">
             About Sylvester Osuji
             Foundation</h1>
 
           <img src={aboutImage} className="w-[520px] h-auto rounded" alt="main image for the aboutpage" />
         </div>
+
+        {/* <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="72" color="black" viewBox="0 0 1920 572" fill="none">
+          <path d="M1920 571.504L-0.00012207 571.504L-6.1286e-05 50.0353C-6.1286e-05 50.0353 1075.33 -85.7858 899.334 90.1401C723.334 266.066 1920 50.0355 1920 50.0355L1920 571.504Z" fill="white" />
+        </svg> */}
 
         <div className="px-28 h-[60vh] flex gap-3 flex-col ">
 
@@ -206,7 +210,7 @@ const About = () => {
 
           <textarea id="message" rows={5} className="block p-2.5 w-full mb-10 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
 
-          <button className="bg-[#0098DB] text-white font-bold py-2 px-4 rounded">
+          <button className="bg-[#0098DB] text-white font-bold py-2 pxx-4 w-32 text-sm rounded">
             Send Message
           </button>
 
