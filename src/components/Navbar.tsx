@@ -39,15 +39,16 @@ const Navbar: React.FC = () => {
     return (
         <div className='w-full bg-white h-[80px] flex items-center font-inter fixed top-0 left-0 z-[111111] shadow' ref={headerRef}>
 
-            <div className='flex w-full justify-between px-28 '>
+
+            <div className='flex w-full justify-between px-28  max-md:px-10'>
                 <div className='flex items-center gap-2 '>
                     <img src={NavLogo} className='w-[40px] h-[40px] rounded-2xl' />
-                    <p className='text-[18px] leading-normal font-bold text-[#111] font-inter '>Sylvester Osunji Foundation(SDF)</p>
+                    <p className='text-[18px] leading-normal font-bold text-[#111] font-inter max-md:text-[8px] '>Sylvester Osunji Foundation(SDF)</p>
                 </div>
 
 
                 <div className='flex gap-5'>
-                    <ul className='flex list-none items-center gap-3'>
+                    <ul className='flex list-none items-center gap-3 max-md:hidden'>
 
                         <li className='text-[14px] font-normal '>
                             <Link to="/" className='hover:text-[#0098DB] focus:text-[#0098DB]'>

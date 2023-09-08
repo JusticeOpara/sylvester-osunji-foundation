@@ -13,15 +13,15 @@ const Footer: React.FC = () => {
     <div className='w-full h-[50vh] bg-[#222] text-white py-12 '>
 
 
-      <div className='flex flex-row w-full h-full px-28 pb-6'>
-        <div className='flex flex-row  w-full h-full'>
+      <div className='flex flex-row w-full h-full px-28 pb-6 max-md:px-4 max-md:flex-col'>
+        <div className='flex flex-row w-full h-full'>
 
           <img src={help} className="w-[228.9px] h-[152.6px] mt-5" />
 
           <div className='flex flex-col h-full justify-between'>
             <h1 className='font-bold text-xl font-inter '>Volunteer</h1>
 
-            <p className='w-[232.4px] font-inter text-sm'>"The best way to find yourself is to lose yourself in the service of others."- Mahatma Gandhi</p>
+            <p className='w-[232.4px] font-inter text-sm max-md:text-[2px]'>"The best way to find yourself is to lose yourself in the service of others."- Mahatma Gandhi</p>
 
             <button className="bg-white  text-[#0098DB]  font-normal py-1 w-28 rounded ">
               Volunteer →
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
 
 
 
-      <div className='px-28 bg-inherit h-full w-full'>
+      <div className='px-28 max-md:px-4 bg-inherit h-full w-full'>
         <div className='w-full flex justify-between py-6'>
           <div className='flex items-center gap-2'>
 

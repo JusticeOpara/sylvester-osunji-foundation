@@ -5,7 +5,7 @@ import ellipse02 from "../assets/images/Ellipse_2.png"
 import ellipse03 from "../assets/images/Ellipse_3.png"
 import ellipse04 from "../assets/images/Ellipse_4.png"
 import ellipse05 from "../assets/images/Ellipse_5.png"
-
+import snake from "../assets/images/snake-design.png"
 
 
 
@@ -53,19 +53,18 @@ const About = () => {
 
     <div className="w-full mt-[80px]">
       <div>
-        <div className="flex flex-row justify-between items-center bg-gray-200 px-28 h-[80vh] w-full ">
-          <h1 className="text-6xl font-openSan font-bold text-[#111] w-[465.2px] bg-yellow-50">
+        <div className="flex flex-row justify-between items-center bg-[#FFFAFA] px-28 h-[80vh] w-full relative">
+          <h1 className="text-6xl font-openSan font-bold text-[#111] w-[465.2px]">
             About Sylvester Osuji
             Foundation</h1>
 
-          <img src={aboutImage} className="w-[520px] h-auto rounded" alt="main image for the aboutpage" />
+          <img src={aboutImage} className="w-[50%] h-auto rounded" alt="main image for the aboutpage" />
         </div>
 
-        {/* <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="72" color="black" viewBox="0 0 1920 572" fill="none">
-          <path d="M1920 571.504L-0.00012207 571.504L-6.1286e-05 50.0353C-6.1286e-05 50.0353 1075.33 -85.7858 899.334 90.1401C723.334 266.066 1920 50.0355 1920 50.0355L1920 571.504Z" fill="white" />
-        </svg> */}
+      
+        <img src={snake} className="bfg-red-500 absolute bottom-0 w-full" alt=""/>
 
-        <div className="px-28 h-[60vh] flex gap-3 flex-col ">
+        <div className="px-28 h-[60vh] flex gap-3 flex-col justify-center ">
 
           <p className="font-openSan text-base font-normal text-[#111] w-[500px] leading-6">
             Sylvester Osuji Foundation was founded in the year 2007 by a young talented visual artist & humanitarian named Sylvester Oguguo Osuji
