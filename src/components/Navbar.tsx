@@ -42,8 +42,8 @@ const Navbar: React.FC = () => {
 
             <div className='flex w-full justify-between px-28  max-md:px-10'>
                 <div className='flex items-center gap-2 '>
-                    <img src={NavLogo} className='w-[40px] h-[40px] rounded-2xl' />
-                    <p className='text-[18px] leading-normal font-bold text-[#111] font-inter max-md:text-[8px] '>Sylvester Osunji Foundation(SDF)</p>
+                    <img src={NavLogo} className='w-[40px] h-auto rounded-2xl' />
+                    <p className='text-[18px] leading-normal font-bold text-[#111] font-inter max-md:text-[10px] '>Sylvester Osunji Foundation(SDF)</p>
                 </div>
 
 

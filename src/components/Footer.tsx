@@ -4,43 +4,37 @@ import help from "../assets/images/Help.png"
 import footerLogo from "../assets/images/footer-logo.png"
 import facebook from "../assets/images/media2.png"
 import twitter from "../assets/images/media.png"
-import piggy from "../assets/images/piggy-bank.png"
-import stairs from "../assets/images/Stairs.svg"
-import cash from "../assets/images/cash.png"
+import donate from "../assets/images/bro.svg"
 
 const Footer: React.FC = () => {
   return (
-    <div className='w-full h-[50vh] bg-[#222] text-white py-12 '>
+    <div className='w-full h-[50vh] max-md:h-[90vh] bg-[#222] text-white py-12 max-nmd:hidden '>
 
-
-      <div className='flex flex-row w-full h-full px-28 pb-6 max-md:px-4 max-md:flex-col'>
-        <div className='flex flex-row w-full h-full'>
+      <div className='flex flex-row w-full h-full px-28 pb-6 max-md:px-4 max-md:flex-col max-md:gap-4'>
+        <div className='flex flex-row w-full h-full max-md:items-center'>
 
           <img src={help} className="w-[228.9px] h-[152.6px] mt-5" />
 
-          <div className='flex flex-col h-full justify-between'>
+          <div className='flex flex-col h-full justify-between max-md:justify-evenly'>
             <h1 className='font-bold text-xl font-inter '>Volunteer</h1>
 
-            <p className='w-[232.4px] font-inter text-sm max-md:text-[2px]'>"The best way to find yourself is to lose yourself in the service of others."- Mahatma Gandhi</p>
+            <p className='w-[232.4px] font-inter text-sm max-md:w-full'>"The best way to find yourself is to lose yourself in the service of others."- Mahatma Gandhi</p>
 
-            <button className="bg-white  text-[#0098DB]  font-normal py-1 w-28 rounded ">
+            <button className="bg-white text-[#0098DB] font-normal py-1 w-28 rounded ">
               Volunteer →
             </button>
           </div>
         </div>
 
-        <div className='flex flex-row  w-full'>
-          <div className='flex items-center'>
-            <img src={stairs} className="w-[50px] " />
-            <img src={piggy} className="w-[50px] h-[50px]" />
-            <img src={cash} className='w-[40px]' />
-          </div>
-
-          <div className='flex flex-col h-full justify-between'>
+        <div className='flex flex-row  w-full h-full max-md:items-center'>
+      
+            <img src={donate} className="w-[228.9px] h-[152.6px] mt-5" />
+           
+          <div className='flex flex-col h-full justify-between max-md:justify-evenly'>
 
             <h1 className='font-bold text-xl font-inter'>Donate</h1>
 
-            <p className='w-[252.4px] font-inter text-sm'>"No act of kindness, no matter how small, is ever wasted." - Aesop</p>
+            <p className='w-[252.4px] font-inter text-sm max-md:w-full'>"No act of kindness, no matter how small, is ever wasted." - Aesop</p>
 
 
             <button className="bg-white text-[#0098DB] font-normal py-1 w-28 rounded ">

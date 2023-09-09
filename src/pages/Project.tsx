@@ -1,18 +1,24 @@
 import projectImage from "../assets/images/our-value.png"
 import relief01 from "../assets/images/community01.png"
 import relief02 from "../assets/images/community02.png"
+import { motion } from "framer-motion"
+
 
 const Project = () => {
   return (
 
-    <div className="w-full mt-[80px]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="w-full mt-[80px]">
 
       <div className="w-full h-[80vh] flex flex-row justify-between items-center px-28">
-      
-          <h1 className="font-bold font-openSan bg-white text-6xl w-[459.1px] leading-[65px]">
-            Sylvester Osuji Foundation Projects
-          </h1>
-        
+
+        <h1 className="font-bold font-openSan bg-white text-6xl w-[459.1px] leading-[65px]">
+          Sylvester Osuji Foundation Projects
+        </h1>
+
         <img src={projectImage} className="w-[50%] h-auto rounded" alt="the foundations work" />
       </div>
 
@@ -87,7 +93,7 @@ const Project = () => {
 
 
 
-    </div>
+    </motion.div>
   )
 }
 

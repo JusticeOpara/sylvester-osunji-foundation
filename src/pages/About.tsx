@@ -6,7 +6,7 @@ import ellipse03 from "../assets/images/Ellipse_3.png"
 import ellipse04 from "../assets/images/Ellipse_4.png"
 import ellipse05 from "../assets/images/Ellipse_5.png"
 import snake from "../assets/images/snake-design.png"
-
+import { motion } from "framer-motion"
 
 
 interface Team {
@@ -51,7 +51,11 @@ const About = () => {
 
   return (
 
-    <div className="w-full mt-[80px]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="w-full mt-[80px]">
       <div>
         <div className="flex flex-row justify-between items-center bg-[#FFFAFA] px-28 h-[80vh] w-full relative">
           <h1 className="text-6xl font-openSan font-bold text-[#111] w-[465.2px]">
@@ -61,8 +65,8 @@ const About = () => {
           <img src={aboutImage} className="w-[50%] h-auto rounded" alt="main image for the aboutpage" />
         </div>
 
-      
-        <img src={snake} className="bfg-red-500 absolute bottom-0 w-full" alt=""/>
+
+        <img src={snake} className="bfg-red-500 absolute bottom-0 w-full" alt="" />
 
         <div className="px-28 h-[60vh] flex gap-3 flex-col justify-center ">
 
@@ -84,8 +88,8 @@ const About = () => {
 
       </div>
 
-      <div className="bg-[#3B4293] w-full h-[150vh] text-white px-28 py-20 flex flex-col justify-between ">
-        <h1 className="font-openSan text-2xl font-bold pl-10 ">Meet The Team</h1>
+      <div className="bg-[#3B4293] w-full h-[150vh] text-white px-28 py-10 flex flex-col justify-between ">
+        <h1 className="font-openSan text-2xl font-bold pl-10 pt-10 ">Meet The Team</h1>
 
         <div className="flex flex-row justify-between items-center">
 
@@ -236,7 +240,7 @@ const About = () => {
         </div>
       </div>
 
-    </div>
+    </motion.div>
   )
 }
 

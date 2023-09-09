@@ -23,7 +23,7 @@ const Carsousel = () => {
     const CarouselCard: React.FC<CarouselProps> = ({ image, text }) => {
 
         return (
-            <div className="w-[767.2px] h-[345.8px] max-md:w-full  max-md:h-[150px] bg-[#018ecc] opac9ity-80 border-[#018ECC] border-[3px] flex gap-6 items-center shadow-2xl rounded-lg p-8 max-md:p-4">
+            <div className="w-[767.2px] h-[345.8px] max-md:w-full  max-md:h-[150px] bg-[#018ecc] border-[#018ECC] border-[3px] flex gap-6 items-center hover:shadow-2xl shadow rounded-lg p-8 max-md:p-4">
               
                 {image}
 
@@ -47,7 +47,7 @@ const Carsousel = () => {
 
     return (
         <>
-            <div className="w-full h-[100vh] flex flex-col justify-evenly items-center bg-white max-md:h-[50vh] max-md:px-4">
+            <div className="w-full h-[90vh] flex flex-col justify-evenly items-center bg-white max-md:h-[50vh] max-md:px-4">
 
                 <h1 className="font-bold text-4xl text-center max-md:text-xl">Stories</h1>
 
@@ -58,7 +58,7 @@ const Carsousel = () => {
                         slidesPerView={isMobile ? 1 : 1.6}
                         pagination={{ clickable: true }}
                         autoplay={{ delay: 2500, disableOnInteraction: false }}
-                        className=" swiper_container">
+                        className="swiper_container">
 
                         <SwiperSlide>
 
