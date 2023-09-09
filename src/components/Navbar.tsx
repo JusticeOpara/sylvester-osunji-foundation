@@ -2,13 +2,14 @@ import React from 'react'
 import NavLogo from "../assets/images/nav-logo.png"
 import donate from "../assets/images/donate.png"
 import { Link } from 'react-router-dom';
-
-import { useEffect, useRef } from 'react';
+import Modal from './Model';
+import { useEffect, useRef, useState } from 'react';
 
 
 const Navbar: React.FC = () => {
 
     const headerRef = useRef<HTMLDivElement>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false)
     console.log(headerRef, "headerref")
 
     useEffect(() => {
@@ -34,7 +35,9 @@ const Navbar: React.FC = () => {
         };
     }, []);
 
-
+    const handleToggleModal = () => {
+        setIsModalOpen(!isModalOpen);
+    };
 
     return (
         <div className='w-full bg-white h-[80px] flex items-center font-inter fixed top-0 left-0 z-[111111] shadow' ref={headerRef}>
@@ -72,9 +75,17 @@ const Navbar: React.FC = () => {
                         </li>
                     </ul>
 
-                    <button className='rounded-lg py-[8px] px-[20px] bg-inherit text-[#0098db] flex justify-center items-center hover:text-white hover:bg-[#0098db] border-[#0098DB] border '>Donate
-                        <img src={donate} className="" alt="donate"/>
+                    <button onClick={handleToggleModal}
+                        className='rounded-lg py-[8px] px-[20px] bg-inherit text-[#0098db] flex justify-center items-center hover:text-white hover:bg-[#0098db] border-[#0098DB] border '>Donate
+                        <img src={donate} className="" alt="donate" />
+
                     </button>
+
+                    <Modal isOpen={isModalOpen} onClose={handleToggleModal}>
+                        <h1 className="text-sm text-center font-semibold pb-2">You are about to place a bit for The Red Bored Ape</h1>
+
+                    </Modal>
+
                 </div>
             </div>
 
