@@ -46,7 +46,10 @@ const Navbar: React.FC = () => {
             <div className='flex w-full justify-between px-28  max-md:px-10'>
                 <div className='flex items-center gap-2 '>
                     <img src={NavLogo} className='w-[40px] h-auto rounded-2xl' />
-                    <p className='text-[18px] leading-normal font-bold text-[#111] font-inter max-md:text-[10px] '>Sylvester Osunji Foundation(SDF)</p>
+                    <Link to="/">
+                        <p className='text-[18px] leading-normal font-bold text-[#111] font-inter max-md:text-[10px] '>Sylvester Osunji Foundation(SDF)</p>
+                    </Link>
+
                 </div>
 
 
@@ -82,8 +85,50 @@ const Navbar: React.FC = () => {
                     </button>
 
                     <Modal isOpen={isModalOpen} onClose={handleToggleModal}>
-                        <h1 className="text-sm text-center font-semibold pb-2">You are about to place a bit for The Red Bored Ape</h1>
+                        <form className="space-y-6 px-20" action="#">
+                            <div>
 
+                            </div>
+
+                            <div>
+                                <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full name <span className='text-sm font-normal'>(optional)</span></label>
+                                <input type="text" id="first_name" className="border border-[#b1b1b1] text-gray-900 text-xs outline-none rounded-lg block w-full p-3" placeholder="Enter first name & last name" required />
+                            </div>
+
+
+                            <div>
+                                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address *</label>
+                                <input type="email" name="email" id="email" className="border border-[#b1b1b1] outline-none text-gray-900 text-xs rounded-lg block w-full p-3 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter email address" required />
+                            </div>
+
+                            <div>
+                                <label htmlFor="number" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Amount *</label>
+                                <div className='flex gap-3'>
+                                    <select className='flex w-[85.2px] rounded-lg border-[#b1b1b1] outline-none border px-[10px] text-base'>
+
+                                        <option className='text-sm' value="1">NGN</option>
+                                        <option className='text-sm' value="2">Two</option>
+                                        <option className='text-sm' value="3">Three</option>
+
+                                    </select>
+                                    <input type="number" name="" id="number"
+                                        className="border border-[#b1b1b1] outline-none text-gray-900 text-xs rounded-lg block w-full p-3 "
+                                        placeholder="Amount" required />
+                                </div>
+
+                            </div>
+
+
+                            <div className='flex gap-3'>
+                                <button onClick={handleToggleModal} className="bg-transparent underline text-[#111] font-medium  px-4 border rounded">
+                                    Cancel
+                                </button>
+
+                                <button type="submit" className="w-full text-white bg-[#111] focus:ring-4 focus:outline-none focus:ring-[#b1b1b1] font-medium rounded-lg text-sm px-5 py-2.5 text-center">SAVE & CONTINUE</button>
+                            </div>
+
+
+                        </form>
                     </Modal>
 
                 </div>
