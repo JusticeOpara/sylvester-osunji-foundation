@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
 
 
 
-      <div className='px-28 max-md:px-4 bg-inherit h-full w-full'>
+      <div className='px-28 max-md:px-4 bg-inherit h-full w-full 2xl:px-20'>
         <div className='w-full flex justify-between py-6'>
           <div className='flex items-center gap-2'>
 
@@ -60,9 +60,9 @@ const Footer: React.FC = () => {
             <span className='font-inter text-sm font-semibold'>Sylvester Osuji Foundation (SOF)</span>
           </div>
 
-          <div className=''>
+          <div className='flex flex-col gap-3'>
             <p className='font-inter text-sm font-medium'>Connect</p>
-            <div className='flex gap-2'>
+            <div className='flex gap-4'>
               <img src={facebook} />
               <img src={twitter} />
 

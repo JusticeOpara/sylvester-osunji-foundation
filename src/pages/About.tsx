@@ -57,7 +57,7 @@ const About = () => {
       exit={{ opacity: 0 }}
       className="w-full mt-[80px]">
       <div>
-        <div className="flex flex-row justify-between items-center bg-[#FFFAFA] px-28 h-[80vh] w-full relative">
+        <div className="flex flex-row justify-between items-center bg-[#FFFAFA] px-28 2xl:px-20 h-[80vh] w-full relative">
           <h1 className="text-6xl font-openSan font-bold text-[#111] w-[465.2px]">
             About Sylvester Osuji
             Foundation</h1>
@@ -68,47 +68,47 @@ const About = () => {
 
         <img src={snake} className="bfg-red-500 absolute bottom-0 w-full" alt="" />
 
-        <div className="px-28 h-[60vh] flex gap-3 flex-col justify-center ">
+        <div className="px-28 2xl:px-20  h-[60vh] 2xl:h-[80vh] flex gap-3 flex-col justify-center ">
 
-          <p className="font-openSan text-base font-normal text-[#111] w-[500px] leading-6">
+          <p className="font-openSan text-base 2xl:text-lg  font-normal text-[#111] w-[500px] leading-6">
             Sylvester Osuji Foundation was founded in the year 2007 by a young talented visual artist & humanitarian named Sylvester Oguguo Osuji
           </p>
 
-          <p className="leading-6 font-openSan text-base font-normal text-[#111]">He started the foundation with the sole aim of reaching out to the sick women & children, aged & less privileged
+          <p className="leading-6 font-openSan text-base 2xl:text-lg  font-normal text-[#111]">He started the foundation with the sole aim of reaching out to the sick women & children, aged & less privileged
             around him and ever since then the foundation has evolved and grown further around Nigeria and some African states where it touched lives .
             The Syvester Osuji foundation provides aid/support to underprivileged & impoverished communities in Africa & beyond.</p>
 
-          <p className="font-openSan text-base font-normal text-[#111] leading-6">Slyvester Osuji Foundation (SOL) is determined to influence and inspire young Africans in self rediscovery, mentoring, empowerment and provision of educational scholarships &
+          <p className="font-openSan text-base font-normal 2xl:text-lg  text-[#111] leading-6">Slyvester Osuji Foundation (SOL) is determined to influence and inspire young Africans in self rediscovery, mentoring, empowerment and provision of educational scholarships &
             free skills acquisition programs to help reduce youth restiveness & prostitution among the girlchild.</p>
 
-          <p className="font-openSan text-base font-normal text-[#111] leading-6">
+          <p className="font-openSan text-base font-normal 2xl:text-lg  text-[#111] leading-6">
             Our goal is to also sustain happiness, enhance cordiality and eliminate malignancy caused by hunger, global economic instabilities and abject poverty.</p>
 
         </div>
 
       </div>
 
-      <div className="bg-[#3B4293] w-full h-[150vh] text-white px-28 py-10 flex flex-col justify-between ">
+      <div className="bg-[#3B4293] w-full h-[150vh] text-white px-28 2xfl:px-20 py-10 flex flex-col justify-between ">
         <h1 className="font-openSan text-2xl font-bold pl-10 pt-10 ">Meet The Team</h1>
 
-        <div className="flex flex-row justify-between items-center">
+        <div className="flex flex-row justify-between items-center ">
 
-          <img src={sylvester} className="rounded-[100%] w-64" />
+          <img src={sylvester} className="rounded-[100%] w-64 2xl:w-80 " />
 
-          <div className="h-[270px] w-[720px] justify-between flex flex-col">
+          <div className="h-[270px] w-[720px] 2xl:w-[860px] 2xl:h-[300px]  bg-red-300 justify-between flex flex-col ">
 
-            <p className="w-full font-openSan text-base leading-7">volutpat imperdiet justo egestas. Ut lectus at faucibus eget. Iaculis mattis morbi orci cursus in bibendum amet egestas vitae.
+            <p className="w-full font-openSan text-base leading-7 2xl:text-lg">volutpat imperdiet justo egestas. Ut lectus at faucibus eget. Iaculis mattis morbi orci cursus in bibendum amet egestas vitae.
               Nec nibh malesuada ac morbi. Neque quis sed id id lectus lorem venenatis. Urna tristique morbi diam nulla cursus vel nam.
               Eget posuere lorem tortor urna aliquam nunc amet elementum volutpat. Volutpat duis lobortis lectus at vulputate eget at consectetur.
               Ipsum neque elit molestie maecenas id vel purus nibh arcu. Sed magna pellentesque ultricies eros congue viverra eget donec.
               Condimentum in sed egestas viverra ullamcorper ornare. Gravida eu </p>
 
 
-            <div className="flex flex-col justify-center items-center h-[60px] bg-[#000000] opacity--50  ">
+            <div className="flex flex-col justify-center items-center h-[60px] 2xl:h-[80px] bg-[#000000] opacity--50  ">
 
-              <p className="text-center font-semibold font-openSan text-base text-white">Slyvester Osunji</p>
+              <p className="text-center font-semibold font-openSan text-base text-white 2xl:text-xl">Slyvester Osunji</p>
 
-              <p className="text-sm font-normal">Founder SOF</p>
+              <p className="text-sm font-normal 2xl:text-base">Founder SOF</p>
             </div>
 
 
@@ -118,7 +118,7 @@ const About = () => {
 
         </div>
 
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center 2xl:justify-evenly">
 
           {Team.map((item, index) => (
 
@@ -139,7 +139,7 @@ const About = () => {
 
       </div>
 
-      <div className="w-full h-[100vh] px-28 flex flex-col justify-evenly">
+      <div className="w-full h-[100vh] px-28 2xl:px-20 flex flex-col justify-evenly">
         <div className="flex flex-row items-center justify-between">
           <p className="font-openSan font-bold text-3xl text-center">Our Vision</p>
 

@@ -13,7 +13,7 @@ const Project = () => {
       exit={{ opacity: 0 }}
       className="w-full mt-[80px]">
 
-      <div className="w-full h-[80vh] flex flex-row justify-between items-center px-28">
+      <div className="w-full h-[80vh] flex flex-row justify-between items-center px-28 2xl:px-20">
 
         <h1 className="font-bold font-openSan bg-white text-6xl w-[459.1px] leading-[65px]">
           Sylvester Osuji Foundation Projects

@@ -53,17 +53,17 @@ const Navbar: React.FC = () => {
                 </div>
 
 
-                <div className='flex gap-5'>
-                    <ul className='flex list-none items-center gap-3 max-md:hidden'>
+                <div className='flex gap-6'>
+                    <ul className='flex list-none items-center gap-6 max-md:hidden'>
 
-                        <li className='text-[14px] font-normal '>
+                        <li className='text-[14px] font-medium '>
                             <Link to="/" className='hover:text-[#0098DB] focus:text-[#0098DB]'>
                                 Home
                             </Link>
                         </li>
 
 
-                        <li className='text-[14px] font-normal'>
+                        <li className='text-[14px] font-medium'>
                             <Link to="/about" className='hover:text-[#0098DB] focus:text-[#0098DB]'>
                                 AboutUs
                             </Link>
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
                         </li>
 
 
-                        <li className='text-[14px] font-normal '>
+                        <li className='text-[14px] font-medium '>
                             <Link to="/project" className='hover:text-[#0098DB] focus:text-[#0098DB]'>
                                 Projects
                             </Link>
