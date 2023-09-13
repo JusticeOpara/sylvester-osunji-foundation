@@ -1,13 +1,15 @@
 import React from 'react'
 import NavLogo from "../assets/images/nav-logo.png"
+import menubar from "../assets/images/menubar.svg"
 import donate from "../assets/images/donate.png"
 import { Link } from 'react-router-dom';
 import Modal from './Model';
+import { AiOutlineClose } from 'react-icons/ai'
 import { useEffect, useRef, useState } from 'react';
 
 
 const Navbar: React.FC = () => {
-
+    const [isNavExpanded, setIsNavExpanded] = useState(false)
     const headerRef = useRef<HTMLDivElement>(null);
     const [isModalOpen, setIsModalOpen] = useState(false)
     console.log(headerRef, "headerref")
@@ -39,21 +41,25 @@ const Navbar: React.FC = () => {
         setIsModalOpen(!isModalOpen);
     };
 
+    const handleNav = () => {
+        setIsNavExpanded(!isNavExpanded)
+    }
+
     return (
         <div className='w-full bg-white h-[80px] flex items-center font-inter fixed top-0 left-0 z-[111111] shadow' ref={headerRef}>
 
 
-            <div className='flex w-full justify-between px-28  max-md:px-10'>
+            <div className='flex w-full justify-between px-28  max-md:px-5 items-center'>
                 <div className='flex items-center gap-2 '>
-                    <img src={NavLogo} className='w-[40px] h-auto rounded-2xl' />
+                    <img src={NavLogo} className='w-[40px] h-auto rounded-2xl max-md:w-[20px]' />
                     <Link to="/">
-                        <p className='text-[18px] leading-normal font-bold text-[#111] font-inter max-md:text-[10px] '>Sylvester Osunji Foundation(SDF)</p>
+                        <p className='text-[18px] leading-normal font-bold text-[#111] font-inter max-md:text-[10px]'>Sylvester Osunji Foundation(SDF)</p>
                     </Link>
 
                 </div>
 
 
-                <div className='flex gap-6'>
+                <div className='flex gap-6 items-center'>
                     <ul className='flex list-none items-center gap-6 max-md:hidden'>
 
                         <li className='text-[14px] font-medium '>
@@ -79,10 +85,26 @@ const Navbar: React.FC = () => {
                     </ul>
 
                     <button onClick={handleToggleModal}
-                        className='rounded-lg py-[8px] px-[20px] bg-inherit text-[#0098db] flex justify-center items-center hover:text-white hover:bg-[#0098db] border-[#0098DB] border '>Donate
+                        className='rounded-lg py-[8px] px-[20px] max-md:py-[4px] max-md:px-[12px] bg-inherit text-[#0098db] flex justify-center items-center hover:text-white hover:bg-[#0098db] border-[#0098DB] border '>Donate
                         <img src={donate} className="" alt="donate" />
 
                     </button>
+
+                    <div onClick={handleNav} className='max-sm:block top-2 right-[20px] max-2xl:hidden w-10'>
+                        {isNavExpanded ? <AiOutlineClose size={20} /> : <img src={menubar} className='w-50' />}
+                    </div>
+                    <div className={isNavExpanded ? 'leading-loose h-max text-xl absolute left-0 top-0 w-full mx-auto z-10 flex mt-16 bg-primary ease-in-out flex-col' : 'bg-blue-800 absolute left-[-100%]'}>
+                        <ul onClick={handleNav} className='w-full bg-[#0098db] p-inline-start-[40px]   '>
+
+                            <li className='hover:text-[#0098DB] w-fit text-base font-medium py-[12px] px-[13px] '><Link to="/">Home </Link></li>
+
+                            <li className='hover:text-[#0098DB] w-fit text-base font-medium py-[12px] px-[13px]'><Link to="/about">AboutUs </Link></li>
+
+                            <li className='hover:text-[#0098DB] w-fit text-base font-medium py-[12px] px-[13px]'> <Link to="/project">Projects </Link> </li>
+
+
+                        </ul>
+                    </div>
 
                     <Modal isOpen={isModalOpen} onClose={handleToggleModal}>
                         <form className="space-y-6 px-20" action="#">

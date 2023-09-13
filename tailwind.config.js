@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('./assets/images/dark-hero-frame.png')",
+        'hero-pattern': "url('./assets/images/hero-frame.png')",
          'text-background': "url('./assets/images/rectangle-white.png')"
       },
 

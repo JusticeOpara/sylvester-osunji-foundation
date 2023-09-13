@@ -57,47 +57,47 @@ const About = () => {
       exit={{ opacity: 0 }}
       className="w-full mt-[80px]">
       <div>
-        <div className="flex flex-row justify-between items-center bg-[#FFFAFA] px-28 2xl:px-20 h-[80vh] w-full relative">
-          <h1 className="text-6xl font-openSan font-bold text-[#111] w-[465.2px]">
+        <div className="flex flex-row justify-between max-md:justify-evenly max-md:flex-col items-center bg-[#FFFAFA] px-28 max-md:px-4 2xl:px-20 h-[80vh] max-md:h-[40vh]  w-full relative">
+          <h1 className="text-6xl max-md:text-xl max-md:font-bold font-openSan font-bold text-[#111] w-[465.2px] max-md:text-center">
             About Sylvester Osuji
             Foundation</h1>
 
-          <img src={aboutImage} className="w-[50%] h-auto rounded" alt="main image for the aboutpage" />
+          <img src={aboutImage} className="w-[50%] max-md:w-full h-auto rounded" alt="main image for the aboutpage" />
         </div>
 
 
-        <img src={snake} className="bfg-red-500 absolute bottom-0 w-full" alt="" />
+        <img src={snake} className="bg-redd-500 absolute bottom-0 w-full bot max-md:bottom-auto [430px]" alt="" />
 
-        <div className="px-28 2xl:px-20  h-[60vh] 2xl:h-[80vh] flex gap-3 flex-col justify-center ">
+        <div className="px-28 2xl:px-20 max-md:px-4 h-[60vh] max-md:h-[70vh] 2xl:h-[80vh] flex gap-3 max-md:gap-5 flex-col justify-center ">
 
-          <p className="font-openSan text-base 2xl:text-lg  font-normal text-[#111] w-[500px] leading-6">
+          <p className="font-openSan text-base 2xl:text-lg max-sm:text-sm font-normal text-[#111] w-[500px] leading-6 max-md:w-full">
             Sylvester Osuji Foundation was founded in the year 2007 by a young talented visual artist & humanitarian named Sylvester Oguguo Osuji
           </p>
 
-          <p className="leading-6 font-openSan text-base 2xl:text-lg  font-normal text-[#111]">He started the foundation with the sole aim of reaching out to the sick women & children, aged & less privileged
+          <p className="leading-6 font-openSan text-base 2xl:text-lg max-sm:text-sm font-normal text-[#111]">He started the foundation with the sole aim of reaching out to the sick women & children, aged & less privileged
             around him and ever since then the foundation has evolved and grown further around Nigeria and some African states where it touched lives .
             The Syvester Osuji foundation provides aid/support to underprivileged & impoverished communities in Africa & beyond.</p>
 
-          <p className="font-openSan text-base font-normal 2xl:text-lg  text-[#111] leading-6">Slyvester Osuji Foundation (SOL) is determined to influence and inspire young Africans in self rediscovery, mentoring, empowerment and provision of educational scholarships &
+          <p className="font-openSan text-base font-normal 2xl:text-lg max-sm:text-sm text-[#111] leading-6">Slyvester Osuji Foundation (SOL) is determined to influence and inspire young Africans in self rediscovery, mentoring, empowerment and provision of educational scholarships &
             free skills acquisition programs to help reduce youth restiveness & prostitution among the girlchild.</p>
 
-          <p className="font-openSan text-base font-normal 2xl:text-lg  text-[#111] leading-6">
+          <p className="font-openSan text-base font-normal 2xl:text-lg max-sm:text-sm text-[#111] leading-6">
             Our goal is to also sustain happiness, enhance cordiality and eliminate malignancy caused by hunger, global economic instabilities and abject poverty.</p>
 
         </div>
 
       </div>
 
-      <div className="bg-[#3B4293] w-full h-[150vh] text-white px-28 2xfl:px-20 py-10 flex flex-col justify-between ">
-        <h1 className="font-openSan text-2xl font-bold pl-10 pt-10 ">Meet The Team</h1>
+      <div className="bg-[#3B4293] w-full h-[150vh] max-md:h-[80vh] text-white px-28 max-md:px-4 2xfl:px-20 py-10 flex flex-col justify-between ">
+        <h1 className="font-openSan text-2xl font-bold pl-10 pt-10 max-md:text-center max-md:p-0 ">Meet The Team</h1>
 
-        <div className="flex flex-row justify-between items-center ">
+        <div className="flex flex-row max-md:flex-col max-md:gap-6 justify-between items-center ">
 
-          <img src={sylvester} className="rounded-[100%] w-64 2xl:w-80 " />
+          <img src={sylvester} className="rounded-[100%] w-64 2xl:w-80 max-md:w-52 " />
 
-          <div className="h-[270px] w-[720px] 2xl:w-[860px] 2xl:h-[300px]  bg-red-300 justify-between flex flex-col ">
+          <div className="h-[270px] w-[720px] 2xl:w-[860px] 2xl:h-[300px] max-md:w-full max-md:h-full justify-between flex flex-col ">
 
-            <p className="w-full font-openSan text-base leading-7 2xl:text-lg">volutpat imperdiet justo egestas. Ut lectus at faucibus eget. Iaculis mattis morbi orci cursus in bibendum amet egestas vitae.
+            <p className="w-full font-openSan text-base leading-7 2xl:text-lg max-md:text-xs max-md:text-center">volutpat imperdiet justo egestas. Ut lectus at faucibus eget. Iaculis mattis morbi orci cursus in bibendum amet egestas vitae.
               Nec nibh malesuada ac morbi. Neque quis sed id id lectus lorem venenatis. Urna tristique morbi diam nulla cursus vel nam.
               Eget posuere lorem tortor urna aliquam nunc amet elementum volutpat. Volutpat duis lobortis lectus at vulputate eget at consectetur.
               Ipsum neque elit molestie maecenas id vel purus nibh arcu. Sed magna pellentesque ultricies eros congue viverra eget donec.
@@ -106,7 +106,7 @@ const About = () => {
 
             <div className="flex flex-col justify-center items-center h-[60px] 2xl:h-[80px] bg-[#000000] opacity--50  ">
 
-              <p className="text-center font-semibold font-openSan text-base text-white 2xl:text-xl">Slyvester Osunji</p>
+              <p className="text-center font-semibold font-openSan text-base  text-white 2xl:text-xl">Slyvester Osunji</p>
 
               <p className="text-sm font-normal 2xl:text-base">Founder SOF</p>
             </div>
@@ -122,44 +122,43 @@ const About = () => {
 
           {Team.map((item, index) => (
 
-            <div className=" flex flex-col justify-center items-center" key={index}>
+            <div className="flex flex-col justify-center items-center" key={index}>
 
               <img src={item.imgUrl} className="w-[80%]" alt="team memeber" />
 
-              <p className="text-center font-inter text-lg font-semibold">{item.title}</p>
+              <p className="text-center font-inter text-lg font-semibold max-md:text-[8px] leading-3">{item.title}</p>
 
-              <p className="text-sm font-normal font-inter text-center ">{item.part}</p>
+              <p className="text-sm font-normal font-inter text-center  max-md:text-[8px] leading-3">{item.part}</p>
 
             </div>
           ))}
 
         </div>
-
-
-
       </div>
 
-      <div className="w-full h-[100vh] px-28 2xl:px-20 flex flex-col justify-evenly">
-        <div className="flex flex-row items-center justify-between">
+
+
+      <div className="w-full h-[100vh] max-md:h-[80vh] px-28 max-md:px-4 2xl:px-20 flex flex-col justify-evenly max-md:items-center">
+        <div className="flex flex-row max-md:flex-col items-center justify-between">
           <p className="font-openSan font-bold text-3xl text-center">Our Vision</p>
 
-          <p className="text-base w-[800px] leading-6">To provide food, shelter, education & basic healthcare for women, aged men and children who are dying from hunger
+          <p className="text-base w-[800px] leading-6 max-md:w-full">To provide food, shelter, education & basic healthcare for women, aged men and children who are dying from hunger
             and abject poverty caused by global lockdown & other economic meltdown.
             We support  the vulnerable, individuals and families in the poorest communities in the world especially in Africa.</p>
         </div>
 
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-row max-md:flex-col items-center justify-between">
           <p className="font-openSan font-bold text-3xl text-center">Our Mission</p>
 
-          <p className="text-base w-[800px] leading-6">To see a world free from hunger, sickness and pain caused by
+          <p className="text-base w-[800px] leading-6 max-md:w-full">To see a world free from hunger, sickness and pain caused by
             unavailability of care and love for humanity above all we want to help put an end to youth restiveness and abuse of
             the girlchild in Africa & the globe at large which  in most cases is caused by poverty & unemployment.</p>
         </div>
 
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-row max-md:flex-col items-center justify-between">
           <p className="font-openSan font-bold text-3xl text-center ">Our Focus</p>
 
-          <p className="text-base w-[800px] leading-6">To provide food, shelter, education & basic healthcare for women, aged men and children who are dying from hunger
+          <p className="text-base w-[800px] leading-6 max-md:w-full">To provide food, shelter, education & basic healthcare for women, aged men and children who are dying from hunger
             and abject poverty caused by global lockdown & other economic meltdown.
             We support  the vulnerable, individuals and families in the poorest communities in the world especially in Africa.</p>
         </div>
@@ -167,11 +166,9 @@ const About = () => {
       </div>
 
 
-      <div className="w-full h-[120vh] px-28 bg-[#FFFAFA] flex  justify-between items-center">
+      <div className="w-full h-[120vh] max-md:h-[110vh] px-28 max-md:px-4 bg-[#FFFAFA] flex justify-between items-center max-md:flex-col  ">
 
-
-
-        <form className="w-[50vw] h-full flex justify-center flex-col">
+        <form className="w-[50vw] max-md:w-full h-full flex justify-center flex-col ">
 
           <p className="font-openSan font-bold text-3xl pb-10">Get In Touch</p>
 
@@ -211,15 +208,15 @@ const About = () => {
 
           </div>
 
-          <textarea id="message" rows={5} className="block p-2.5 w-full mb-10 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+          <textarea id="message" rows={5} className="block p-2.5 w-full mb-10 max-md:mb-5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
 
-          <button className="bg-[#0098DB] text-white font-bold py-2 pxx-4 w-32 text-sm rounded">
+          <button className="bg-[#0098DB] text-white font-bold py-2  w-32 text-sm rounded">
             Send Message
           </button>
 
         </form>
 
-        <div className="w-[310.1px] h-[273px] bg-[#EDF7F5] px-4 py-8 flex flex-col justify-between  ">
+        <div className="w-[310.1px] h-[273px] bg-[#EDF7F5] max-md:w-full px-4 py-8 flex flex-col justify-between max-md:mb-10  ">
           <h1 className="font-bold capitalize text-xl font-playfair">Address</h1>
 
           <p className="text-xs text-[#666666]">

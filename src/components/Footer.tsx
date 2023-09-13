@@ -8,7 +8,7 @@ import donate from "../assets/images/bro.svg"
 
 const Footer: React.FC = () => {
   return (
-    <div className='w-full h-[50vh] max-md:h-[90vh] bg-[#222] text-white py-12 max-nmd:hidden '>
+    <div className='w-full h-[50vh] max-md:h-[50vh] bg-[#222] text-white py-12 max-md:py-4 '>
 
       <div className='flex flex-row w-full h-full px-28 pb-6 max-md:px-4 max-md:flex-col max-md:gap-4'>
         <div className='flex flex-row w-full h-full max-md:items-center'>

@@ -22,16 +22,23 @@ const Home = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
-            <div className="flex flex-col justify-center h-[90vh] max-md:h-[60vh] w-full items-center bg-hero-pattern bg-no-repeat bg-cover relative overflow-hidden gap-[20px] opacity-90">
 
-                <div className="w-[50%] 2xl:w-[40%] max-md:w-[80%] flex-col justify-center">
+            <div className="relative h-[90vh] max-md:h-[50vh] w-full bg-[#000000]">
 
-                    <p className="text-center text-[50px] leading-[56px] font-bold text-white font-inter max-md:text-2xl">
-                        Empowering Lives, Enriching Communities
-                    </p>
+                <div className="absolute inset-0  bg-hero-pattern bg-no-repeat bg-cover opacity-50 z-10"></div>
+
+
+                <div className="absolute inset-0 flex flex-col items-center justify-center z-20 max-md:gap-5">
+
+                    <div className="w-[50%] 2xl:w-[40%] max-md:w-[80%] flex-col justify-center">
+
+                        <p className="text-center text-[50px] leading-[56px] font-extrabold text-white font-inter max-md:text-2xl">
+                            Empowering Lives, Enriching Communities
+                        </p>
+                    </div>
+                    <p className="text-center text-sm 2xl:text-lg font-normal text-white max-md:w-80 max-md:text-xs max font-inter">We provide aid and support to underprivileged and impoverished communities in Africa and beyond.</p>
                 </div>
 
-                <p className="text-center text-base 2xl:text-lg font-semibold text-white max-md:w-80 max-md:text-xs max font-inter">We provide aid and support to underprivileged and impoverished communities in Africa and beyond.</p>
 
             </div>
 
@@ -57,15 +64,16 @@ const Home = () => {
             </div>
 
 
-            <div className="2xl:px-20 w-full he-[100vh] px-28 py-20 max-md:px-4 max-md:py-10  flex flex-col justify-center items-center gap-10">
+            <div className=" 2xl:bg-neutral-600 2xl:px-20 w-full he-[100vh] px-28 py-20 max-md:px-4 max-md:py-10  flex flex-col justify-center items-center gap-10">
                 <div className="w-full h-full max-md:flex max-md:flex-col max-md:gap-16">
 
                     <div className="h-full w-full flex flex-row justify-center max-md:flex-col  max-md:gap-5 ">
+                        <p className="max-2xl:hidden font-bold max-md:block text-xl leading-3">Our Vision</p>
                         <img src={ourValue} className="w-[510px] he-[366.1px] h-auto max-md:w-[800px] 2xl:w-[709px]  " alt="" />
 
                         <div className="w-[510px] h-[366.1px] 2xl:w-[709px] bg-wrhite justify-evenly flex flex-col items-center max-md:w-full max-md:h-full  ">
 
-                            <h1 className="font-bold text-[40px] font-openSan max-md:hidden">Our Vision</h1>
+                            <h1 className="font-bold text-[40px] font-openSan max-md:hidden ">Our Vision</h1>
 
                             <p className="w-[389.4px] h-[140px] font-openSan text-base font-normal max-md:w-full 2xl:text-lg">
 
@@ -77,7 +85,7 @@ const Home = () => {
                     </div>
 
                     <div className="h-full w-full flex flex-row maxx-md:flex-col justify-center max-md:flex-col-reverse max-md:gap-5">
-
+                        
                         <div className="w-[510px] 2xl:w-[709px] h-[366.1px] bg-whfite justify-evenly flex flex-col items-center max-md:w-full max-md:h-full">
 
                             <h1 className="font-bold text-[40px] font-openSan max-md:hidden">Our Mission</h1>
@@ -90,6 +98,7 @@ const Home = () => {
                         </div>
 
                         <img src={ourMission} className="w-[510px] hr-[366.1px] h-auto 2xl:w-[709px]" alt="Our Vision" />
+                        <p className="leading-3 font-bold max-2xl:hidden max-md:block text-xl">Our Mission</p>
                     </div>
 
                 </div>
@@ -101,7 +110,7 @@ const Home = () => {
             </div>
 
 
-            <div className="w-full h-[120vh] max-md:h-[50vh] bg-[#F2EFEF] max-md:bg-[#3B4293] flex flex-col items-center justify-evenly  p-0">
+            <div className="w-full h-[120vh] max-md:h-[30vh] bg-[#F2EFEF] max-md:bg-[#3B4293] flex flex-col items-center justify-evenly  p-0">
 
                 <h1 className="font-bold text-3xl max-md:text-xl font-openSan max-md:text-white max-md:pt-4">Founder's Note</h1>
 
@@ -134,7 +143,7 @@ const Home = () => {
 
             <Carsousel />
 
-            <div className="w-full h-[434px] max-md:h-full max-md:gap-4 bg-whrite 2xl:px-20 px-28 max-md:px-4 max-md:py-4 flex flex-col justify-evenly  ">
+            <div className="w-full h-[300px]  max-md:h-full max-md:gap-4 bg-whrite 2xl:px-20 px-28 max-md:px-4 max-md:py-4 flex flex-col justify-evenly  ">
                 <p className="font-bold text-2xl font-openSan max-md:text-lg 2xl:text-4xl">Upcoming SOF Events</p>
 
                 <div className="flex gap-4 text-black max-md:flex-col max-md:w-full 2xl:gap-10">
