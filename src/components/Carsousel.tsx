@@ -47,7 +47,7 @@ const Carsousel = () => {
 
     return (
         <>
-            <div className="w-full h-[90vh] 2xl:h-[100vh] xl:h-[80vh] 2xl:bg-orange-300 flex flex-col justify-evenly items-center bg-white max-md:h-[30vh] max-md:px-4">
+            <div className="w-full h-[90vh] 2xl:h-[100vh] xl:h-[80vh] 2xl:bg-orange-300 flex flex-col justify-evenly items-center bg-white max-md:h-[40vh] max-md:px-4">
 
                 <h1 className="font-bold text-4xl text-center max-md:text-xl 2xl:pt-5">Stories</h1>
 

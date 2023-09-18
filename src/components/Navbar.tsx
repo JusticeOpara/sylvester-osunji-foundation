@@ -49,9 +49,9 @@ const Navbar: React.FC = () => {
         <div className='w-full bg-white h-[80px] flex items-center font-inter fixed top-0 left-0 z-[111111] shadow' ref={headerRef}>
 
 
-            <div className='flex w-full justify-between px-28  max-md:px-5 items-center'>
-                <div className='flex items-center gap-2 '>
-                    <img src={NavLogo} className='w-[40px] h-auto rounded-2xl max-md:w-[20px]' />
+            <div className='flex w-full justify-between px-28  max-md:px-0  items-center'>
+                <div className='flex items-center gap-2 max-md:pl-2 '>
+                    <img src={NavLogo} className='w-[40px] h-auto rounded-2xl max-md:w-[30px]' />
                     <Link to="/">
                         <p className='text-[18px] leading-normal font-bold text-[#111] font-inter max-md:text-[10px]'>Sylvester Osunji Foundation(SDF)</p>
                     </Link>
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
                 </div>
 
 
-                <div className='flex gap-6 items-center'>
+                <div className='flex gap-6 items-center  max-md:gap-3'>
                     <ul className='flex list-none items-center gap-6 max-md:hidden'>
 
                         <li className='text-[14px] font-medium '>
@@ -85,13 +85,13 @@ const Navbar: React.FC = () => {
                     </ul>
 
                     <button onClick={handleToggleModal}
-                        className='rounded-lg py-[8px] px-[20px] max-md:py-[4px] max-md:px-[12px] bg-inherit text-[#0098db] flex justify-center items-center hover:text-white hover:bg-[#0098db] border-[#0098DB] border '>Donate
+                        className='rounded-lg py-[8px] px-[20px] max-md:py-[4px] max-md:px-[6px] bg-inherit text-[#0098db] flex justify-center items-center hover:text-white hover:bg-[#0098db] border-[#0098DB] border '>Donate
                         <img src={donate} className="" alt="donate" />
 
                     </button>
 
                     <div onClick={handleNav} className='max-sm:block top-2 right-[20px] max-2xl:hidden w-10'>
-                        {isNavExpanded ? <AiOutlineClose size={20} /> : <img src={menubar} className='w-50' />}
+                        {isNavExpanded ? <AiOutlineClose size={20} /> : <img src={menubar} className='w-8' />}
                     </div>
                     <div className={isNavExpanded ? 'leading-loose h-max text-xl absolute left-0 top-0 w-full mx-auto z-10 flex mt-16 bg-primary ease-in-out flex-col' : 'bg-blue-800 absolute left-[-100%]'}>
                         <ul onClick={handleNav} className='w-full bg-[#0098db] p-inline-start-[40px]   '>

@@ -88,14 +88,14 @@ const About = () => {
 
       </div>
 
-      <div className="bg-[#3B4293] w-full h-[150vh] max-md:h-[80vh] text-white px-28 max-md:px-4 2xfl:px-20 py-10 flex flex-col justify-between ">
+      <div className="bg-[#3B4293] w-full h-[150vh] max-md:h-full max-md:gap-5 text-white px-28 max-md:px-4 2xfl:px-20 py-10 flex flex-col justify-between ">
         <h1 className="font-openSan text-2xl font-bold pl-10 pt-10 max-md:text-center max-md:p-0 ">Meet The Team</h1>
 
-        <div className="flex flex-row max-md:flex-col max-md:gap-6 justify-between items-center ">
+        <div className="flex flex-row max-md:flex-col max-md:gap-5 justify-between items-center ">
 
-          <img src={sylvester} className="rounded-[100%] w-64 2xl:w-80 max-md:w-52 " />
+          <img src={sylvester} className="rounded-[100%] w-64 2xl:w-80 max-md:w-40 " />
 
-          <div className="h-[270px] w-[720px] 2xl:w-[860px] 2xl:h-[300px] max-md:w-full max-md:h-full justify-between flex flex-col ">
+          <div className="h-[270px] w-[720px] 2xl:w-[860px] 2xl:h-[300px] max-md:w-full max-md:h-full justify-between flex flex-col max-md:gap-4 ">
 
             <p className="w-full font-openSan text-base leading-7 2xl:text-lg max-md:text-xs max-md:text-center">volutpat imperdiet justo egestas. Ut lectus at faucibus eget. Iaculis mattis morbi orci cursus in bibendum amet egestas vitae.
               Nec nibh malesuada ac morbi. Neque quis sed id id lectus lorem venenatis. Urna tristique morbi diam nulla cursus vel nam.
@@ -138,7 +138,7 @@ const About = () => {
 
 
 
-      <div className="w-full h-[100vh] max-md:h-[80vh] px-28 max-md:px-4 2xl:px-20 flex flex-col justify-evenly max-md:items-center">
+      <div className="w-full h-[100vh] px-28 max-md:px-4 2xl:px-20 flex flex-col justify-evenly max-md:items-center">
         <div className="flex flex-row max-md:flex-col items-center justify-between">
           <p className="font-openSan font-bold text-3xl text-center">Our Vision</p>
 
@@ -166,7 +166,7 @@ const About = () => {
       </div>
 
 
-      <div className="w-full h-[120vh] max-md:h-[110vh] px-28 max-md:px-4 bg-[#FFFAFA] flex justify-between items-center max-md:flex-col  ">
+      <div className="w-full h-[120vh] px-28 max-md:px-4 bg-[#FFFAFA] flex justify-between items-center max-md:flex-col  ">
 
         <form className="w-[50vw] max-md:w-full h-full flex justify-center flex-col ">
 
