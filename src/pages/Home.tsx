@@ -110,15 +110,15 @@ const Home = () => {
             </div>
 
 
-            <div className="w-full h-[120vh] max-md:h-full bg-[#F2EFEF] max-md:bg-[#3B4293] flex flex-col items-center justify-evenly  p-0">
+            <div className="w-full h-[120vh] max-md:h-full bg-[#F2EFEF] max-md:bg-[#3B4293] flex flex-col items-center justify-evenly max-md:gap-5 p-0">
 
                 <h1 className="font-bold text-3xl max-md:text-xl font-openSan max-md:text-white max-md:pt-4">Founder's Note</h1>
 
-                <div className="flex flex-row max-md:flex-col max-md:items-center  ">
+                <div className="flex flex-row max-md:flex-col max-md:items-center">
 
                     <img src={sylvester} className="w-[410.9px] h-[427.7px] 2xl:w-[587px] 2xl:h-[500px] bg-slate-400 rounded max-md:hidden" />
 
-                    <div className="w-[597.5px] h-[427px] 2xl:h-[500px] 2xl:w-[703px] max-md:h-full max-md:gap-4 bg-[#3B4293] flex flex-col justify-center items-center max-md:w-full ">
+                    <div className="w-[597.5px] h-[427px] 2xl:h-[500px] 2xl:w-[703px] max-md:h-full max-md:gap-5 bg-[#3B4293] flex flex-col justify-center items-center max-md:w-full ">
 
                         <div className="h-full w-full flex flex-col justify-center items-center ">
                             <p className="text-base w-[389.2px] text-[#fff] flex items-start max-md:px-4 2xl:text-xl">

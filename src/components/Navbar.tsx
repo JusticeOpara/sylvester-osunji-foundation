@@ -96,11 +96,11 @@ const Navbar: React.FC = () => {
                     <div className={isNavExpanded ? 'leading-loose h-max text-xl absolute left-0 top-0 w-full mx-auto z-10 flex mt-16 bg-primary ease-in-out flex-col' : 'bg-blue-800 absolute left-[-100%]'}>
                         <ul onClick={handleNav} className='w-full bg-[#0098db] p-inline-start-[40px]   '>
 
-                            <li className='hover:text-[#0098DB] w-fit text-base font-medium py-[12px] px-[13px] '><Link to="/">Home </Link></li>
+                            <li className='hover:text-[#fff] w-fit text-base font-medium py-[12px] px-[13px] '><Link to="/">Home </Link></li>
 
-                            <li className='hover:text-[#0098DB] w-fit text-base font-medium py-[12px] px-[13px]'><Link to="/about">AboutUs </Link></li>
+                            <li className='hover:text-[#fff] w-fit text-base font-medium py-[12px] px-[13px]'><Link to="/about">AboutUs </Link></li>
 
-                            <li className='hover:text-[#0098DB] w-fit text-base font-medium py-[12px] px-[13px]'> <Link to="/project">Projects </Link> </li>
+                            <li className='hover:text-[#fff] w-fit text-base font-medium py-[12px] px-[13px]'> <Link to="/project">Projects </Link> </li>
 
 
                         </ul>

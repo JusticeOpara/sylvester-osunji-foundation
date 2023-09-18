@@ -97,7 +97,7 @@ const About = () => {
 
           <div className="h-[270px] w-[720px] 2xl:w-[860px] 2xl:h-[300px] max-md:w-full max-md:h-full justify-between flex flex-col max-md:gap-4 ">
 
-            <p className="w-full font-openSan text-base leading-7 2xl:text-lg max-md:text-xs max-md:text-center">volutpat imperdiet justo egestas. Ut lectus at faucibus eget. Iaculis mattis morbi orci cursus in bibendum amet egestas vitae.
+            <p className="w-full font-openSan font-medium text-base leading-7 2xl:text-lg max-md:text-xs max-md:text-center">volutpat imperdiet justo egestas. Ut lectus at faucibus eget. Iaculis mattis morbi orci cursus in bibendum amet egestas vitae.
               Nec nibh malesuada ac morbi. Neque quis sed id id lectus lorem venenatis. Urna tristique morbi diam nulla cursus vel nam.
               Eget posuere lorem tortor urna aliquam nunc amet elementum volutpat. Volutpat duis lobortis lectus at vulputate eget at consectetur.
               Ipsum neque elit molestie maecenas id vel purus nibh arcu. Sed magna pellentesque ultricies eros congue viverra eget donec.
@@ -166,7 +166,7 @@ const About = () => {
       </div>
 
 
-      <div className="w-full h-[120vh] px-28 max-md:px-4 bg-[#FFFAFA] flex justify-between items-center max-md:flex-col  ">
+      <div className="w-full h-full max-md:h-full px-28 max-md:px-4 bg-[#FFFAFA] flex justify-between items-center max-md:flex-col py-8 max-mdd:py-0">
 
         <form className="w-[50vw] max-md:w-full h-full flex justify-center flex-col ">
 

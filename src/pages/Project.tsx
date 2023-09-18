@@ -13,7 +13,7 @@ const Project = () => {
       exit={{ opacity: 0 }}
       className="w-full mt-[80px]">
 
-      <div className="w-full h-[80vh] max-md:h-[40vh] flex flex-row justify-between items-center px-28 max-md:px-4 max-md:flex-col 2xl:px-20 max-md:justify-evenly">
+      <div className="w-full h-[80vh] max-md:h-full flex flex-row justify-between items-center px-28 max-md:px-4 max-md:flex-col 2xl:px-20 max-md:justify-evenly">
 
         <h1 className="font-bold max-md:text-xl max-md:text-center font-openSan bg-white text-6xl w-[459.1px] leading-[65px]">
        
@@ -34,16 +34,16 @@ const Project = () => {
       </div>
 
 
-      <div className="w-full h-[120vh] max-md:h-[140vh] px-28 max-md:px-4 flex flex-col justify-evenly">
-        <div>
-          <div className="flex justify-between">
-            <span className="font-semibold leading-8 text-base font-openSan text-[#111] max-md:hidden">Love date with the less priviledged</span>
+      <div className="w-full h-[120vh] max-md:h-full max-md:py-5 px-28 max-md:px-4 flex flex-col justify-evenly">
+        <div className="">
+          <div className="flex justify-between items-center">
+            <span className="font-semibold leading-8 text-base font-openSan text-[#111] max-md:text-sm ">Love date with the less priviledged</span>
             <span className="font-normal leading-8 text-sm font-openSan text-[#777]">February 14, 2020</span>
           </div>
-          <div className=" w-full flex justify-between items-center max-md:flex-col">
-            <img src={relief02} className="w-[391.9727px] h-[258.3px] rounded" alt="Love date with the less priviledged" />
+          <div className=" w-full flex justify-between items-center max-md:flex-col max-md:justify-evenly">
+            <img src={relief02} className="w-[391.9727px] h-[258.3px] max-md:w-full rounded" alt="Love date with the less priviledged" />
 
-            <div className="w-full bg-[#F5F5F5] h-[258.3px] flex items-center justify-center">
+            <div className="w-full bg-[#F5F5F5] h-[258.3px] flex items-center justify-center max-md:bg-white">
               <p className="text-base text-normal font-inter w-[500px]">To provide food, shelter, education & basic healthcare for women,
                 aged men and children who are dying from hunger and abject poverty caused by global lockdown & other economic meltdown.
                 We support  the vulnerable, individuals and families in the poorest communities in the world especially in Africa.</p>
@@ -51,15 +51,15 @@ const Project = () => {
           </div>
         </div>
 
-        <div>
-          <div className="flex justify-between">
-            <span className="font-semibold leading-8 text-base  font-openSan text-[#111] max-md:hidden">Covid-19 relief community outreach</span>
+        <div className="">
+          <div className="flex justify-between items-center">
+            <span className="font-semibold leading-8 text-base  font-openSan text-[#111] max-md:text-sm">Covid-19 relief community outreach</span>
             <span className="font-normal leading-8 text-sm font-openSan text-[#777]">February 14, 2020</span>
           </div>
           <div className=" w-full flex justify-between items-center max-md:flex-col">
-            <img src={relief01} className="w-[391.9727px] h-[258.3px] rounded" alt="Love date with the less priviledged" />
+            <img src={relief01} className="w-[391.9727px] h-[258.3px] max-md:w-full rounded" alt="Love date with the less priviledged" />
 
-            <div className="w-full bg-[#F5F5F5] h-[258.3px] flex items-center justify-center">
+            <div className="w-full bg-[#F5F5F5] h-[258.3px] flex items-center justify-center max-md:bg-white">
               <p className="text-base text-normal font-inter w-[500px]">To provide food, shelter, education & basic healthcare for women,
                 aged men and children who are dying from hunger and abject poverty caused by global lockdown & other economic meltdown.
                 We support  the vulnerable, individuals and families in the poorest communities in the world especially in Africa.</p>

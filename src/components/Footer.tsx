@@ -8,7 +8,7 @@ import donate from "../assets/images/bro.svg"
 
 const Footer: React.FC = () => {
   return (
-    <div className='w-full hd-[50vh] bg-[#222] text-white py-12 max-md:py-4 '>
+    <div className='w-full hg-[50vh] bg-[#222] text-white py-12 max-md:py-4 '>
 
       <div className='flex flex-row w-full px-28 pb-6 max-md:px-4 max-md:flex-col max-md:gap-4'>
         <div className='flex flex-row w-full h-full max-md:items-center max-md:gap-8'>
@@ -16,9 +16,9 @@ const Footer: React.FC = () => {
           <img src={help} className="w-[228.9px] max-md:w-[170px] max-md:h-[100px] h-[152.6px] mt-5" />
 
           <div className='flex flex-col h-full justify-between max-md:justify-evenly max-md:w-full max-md:text-center max-md:items-center max-md:gap-2'>
-            <h1 className='font-bold text-xl font-inter '>Volunteer</h1>
+            <h1 className='font-bold text-xl font-inter max-md:text-base'>Volunteer</h1>
 
-            <p className='w-[232.4px] font-inter text-sm max-md:w-full '>"The best way to find yourself is to lose yourself in the service of others."- Mahatma Gandhi</p>
+            <p className='w-[232.4px] font-inter text-sm max-md:w-full max-sm:text-xs '>"The best way to find yourself is to lose yourself in the service of others."- Mahatma Gandhi</p>
 
             <button className="bg-white text-[#0098DB] font-normal py-1 w-28 rounded ">
               Volunteer →
@@ -32,9 +32,9 @@ const Footer: React.FC = () => {
            
           <div className='flex flex-col h-full justify-between max-md:justify-evenly max-md:w-full max-md:text-center max-md:items-center max-md:gap-2'>
 
-            <h1 className='font-bold text-xl font-inter'>Donate</h1>
+            <h1 className='font-bold text-xl font-inter max-md:text-base'>Donate</h1>
 
-            <p className='w-[252.4px] font-inter text-sm max-md:w-full'>"No act of kindness, no matter how small, is ever wasted." - Aesop</p>
+            <p className='w-[252.4px] font-inter text-sm max-md:w-full max-sm:text-xs'>"No act of kindness, no matter how small, is ever wasted." - Aesop</p>
 
 
             <button className="bg-white text-[#0098DB] font-normal py-1 w-28 rounded ">
