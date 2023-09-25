@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from 'react';
 
 
 const Navbar: React.FC = () => {
+    
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     const headerRef = useRef<HTMLDivElement>(null);
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -90,7 +91,7 @@ const Navbar: React.FC = () => {
 
                     </button>
 
-                    <div onClick={handleNav} className='max-sm:block top-2 right-[20px] max-2xl:hidden w-10'>
+                    <div onClick={handleNav} className='max-sm:block top-2 right-[20px] hidden w-10'>
                         {isNavExpanded ? <AiOutlineClose size={20} /> : <img src={menubar} className='w-8' />}
                     </div>
                     <div className={isNavExpanded ? 'leading-loose h-max text-xl absolute left-0 top-0 w-full mx-auto z-10 flex mt-16 bg-primary ease-in-out flex-col' : 'bg-blue-800 absolute left-[-100%]'}>

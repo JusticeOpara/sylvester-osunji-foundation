@@ -64,7 +64,7 @@ const Home = () => {
             </div>
 
 
-            <div className=" 2xl:bg-neutral-600 2xl:px-20 w-full he-[100vh] px-28 py-20 max-md:px-4 max-md:py-10  flex flex-col justify-center items-center gap-10">
+            <div className="2xl:px-20 w-full he-[100vh] px-28 py-20 max-md:px-4 max-md:py-10  flex flex-col justify-center items-center gap-10">
                 <div className="w-full h-full max-md:flex max-md:flex-col max-md:gap-16">
 
                     <div className="h-full w-full flex flex-row justify-center max-md:flex-col  max-md:gap-5 ">
