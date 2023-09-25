@@ -68,7 +68,7 @@ const Home = () => {
                 <div className="w-full h-full max-md:flex max-md:flex-col max-md:gap-16">
 
                     <div className="h-full w-full flex flex-row justify-center max-md:flex-col  max-md:gap-5 ">
-                        <p className="max-2xl:hidden font-bold max-md:block text-xl leading-3">Our Vision</p>
+                        <p className="hidden font-bold max-md:block text-xl leading-3">Our Vision</p>
                         <img src={ourValue} className="w-[510px] he-[366.1px] h-auto max-md:w-[800px] 2xl:w-[709px]  " alt="" />
 
                         <div className="w-[510px] h-[366.1px] 2xl:w-[709px] bg-wrhite justify-evenly flex flex-col items-center max-md:w-full max-md:h-full  ">
@@ -98,7 +98,7 @@ const Home = () => {
                         </div>
 
                         <img src={ourMission} className="w-[510px] hr-[366.1px] h-auto 2xl:w-[709px]" alt="Our Vision" />
-                        <p className="leading-3 font-bold max-2xl:hidden max-md:block text-xl">Our Mission</p>
+                        <p className="leading-3 font-bold hidden max-md:block text-xl">Our Mission</p>
                     </div>
 
                 </div>
