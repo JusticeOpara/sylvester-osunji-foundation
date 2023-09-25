@@ -59,7 +59,7 @@ const Project = () => {
           <div className=" w-full flex justify-between items-center max-md:flex-col max-md:justify-center max-md:h-[450px]">
             <img src={relief01} className="w-[391.9727px] h-[258.3px] max-md:w-full rounded" alt="Love date with the less priviledged" />
 
-            <div className="w-full bg-[#F5F5F5] h-[258.3px] flex items-center justify-center max-md:bgg-white">
+            <div className="w-full bg-[#F5F5F5] h-[258.3px] flex items-center justify-center max-md:bg-white">
               <p className="text-base text-normal font-inter w-[500px]">To provide food, shelter, education & basic healthcare for women,
                 aged men and children who are dying from hunger and abject poverty caused by global lockdown & other economic meltdown.
                 We support  the vulnerable, individuals and families in the poorest communities in the world especially in Africa.</p>

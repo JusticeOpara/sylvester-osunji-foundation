@@ -122,7 +122,7 @@ const About = () => {
 
           {Team.map((item, index) => (
 
-            <div className="flex flex-col justify-center items-center" key={index}>
+            <div className="flex flex-col justify-center items-center gap-3" key={index}>
 
               <img src={item.imgUrl} className="w-[80%]" alt="team memeber" />
 
