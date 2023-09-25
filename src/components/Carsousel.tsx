@@ -23,12 +23,12 @@ const Carsousel = () => {
     const CarouselCard: React.FC<CarouselProps> = ({ image, text }) => {
 
         return (
-            <div className="w-[767.2px] h-[345.8px] 2xl:w-[920px] 2xl:h-[500px] max-md:w-full  max-md:h-[150px] bg-[#018ecc] border-[#018ECC] border-[3px] flex gap-6 items-center hover:shadow-2xl shadow rounded-lg p-8 max-md:p-4">
+            <div className="w-[767.2px] h-[345.8px] 2xl:w-full 2xl:h-[500px] max-md:w-full 2xl:items-center max-md:h-[150px] bg-[#018ecc] border-[#018ECC] border-[3px] flex gap-6 items-center hover:shadow-2xl shadow rounded-lg p-8 max-md:p-4">
               
                 {image}
 
                 <div className="gap-3 flex flex-col max-md:gap-1">
-                    <p className="w-[390px] h-[120px] 2xl:h-[150px] max-md:w-full max-md:h-[50px] text-base 2xl:text-lg max-md:text-[7px] max-md:leading-3 font-medium text-start">
+                    <p className="w-[390px] 2xl:w-full h-[120px] 2xl:h-[150px] max-md:w-full max-md:h-[50px] text-base 2xl:text-lg max-md:text-[7px] max-md:leading-3 font-medium text-start">
                         {text}
                     </p>
 
@@ -47,9 +47,9 @@ const Carsousel = () => {
 
     return (
         <>
-            <div className="w-full h-[90vh] 2xl:h-[90vh] xl:h-[80vh] flex flex-col justify-evenly items-center bg-white max-md:h-[40vh] max-md:px-4">
+            <div className="w-full h-[90vh] 2xl:h-[60vh] xl:h-[80vh] flex flex-col justify-evenly items-center bg-white max-md:h-[40vh] max-md:px-4">
 
-                <h1 className="font-bold text-[40px] text-center max-md:text-xl 2xl:pt-5">Stories</h1>
+                <h1 className="font-bold text-[40px] text-center max-md:text-xl ">Stories</h1>
 
                 <div className="flex flex-row items-center w-full h-[65%] gap-2 2xl:gap-0">
                     <Swiper

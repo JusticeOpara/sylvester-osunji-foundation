@@ -23,7 +23,7 @@ const Home = () => {
             exit={{ opacity: 0 }}
         >
 
-            <div className="relative h-[90vh] 2xl:h-[100vh] max-md:h-[50vh] w-full bg-[#000000]">
+            <div className="relative h-[90vh] 2xl:h-[95vh] max-md:h-[50vh] w-full bg-[#000000]">
 
                 <div className="absolute inset-0  bg-hero-pattern bg-no-repeat bg-cover opacity-50 z-10"></div>
 
@@ -109,7 +109,7 @@ const Home = () => {
             </div>
 
 
-            <div className="w-full h-[120vh] 2xl:h-[90vh] max-md:h-full bg-[#F2EFEF] max-md:bg-[#3B4293]  flex flex-col items-center justify-evenly max-md:gap-5 p-0">
+            <div className="w-full h-[120vh] 2xl:h-[60vh] max-md:h-full bg-[#F2EFEF] max-md:bg-[#3B4293]  flex flex-col items-center justify-evenly max-md:gap-5 p-0">
 
                 <h1 className="font-bold text-[40px] max-md:text-xl font-openSan max-md:text-white max-md:pt-4">Founder's Note</h1>
 
@@ -142,7 +142,7 @@ const Home = () => {
 
             <Carsousel />
 
-            <div className="w-full h-[300px]  max-md:h-full max-md:gap-4 bg-whrite 2xl:px-20 px-28 max-md:px-4 max-md:py-4 flex flex-col justify-evenly  ">
+            <div className="w-full h-[300px] max-md:h-full max-md:gap-4 bg-whrite 2xl:px-20 px-28 max-md:px-4 max-md:py-4 flex flex-col justify-evenly  ">
                 <p className="font-bold text-[40px] font-openSan max-md:text-lg 2xl:text-4xl">Upcoming SOF Events</p>
 
                 <div className="flex gap-4 text-black max-md:flex-col max-md:w-full 2xl:gap-10">
