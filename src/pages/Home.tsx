@@ -109,18 +109,18 @@ const Home = () => {
             </div>
 
 
-            <div className="w-full h-[120vh] 2xl:h-[60vh] max-md:h-full bg-[#F2EFEF] max-md:bg-[#3B4293]  flex flex-col items-center justify-evenly max-md:gap-5 p-0">
+            <div className="w-full h-[120vh] 2xl:h-[65vh] 2xl:py-8 max-md:h-full bg-[#F2EFEF] max-md:bg-[#3B4293] flex flex-col items-center justify-evenly max-md:gap-5 p-0">
 
                 <h1 className="font-bold text-[40px] max-md:text-xl font-openSan max-md:text-white max-md:pt-4">Founder's Note</h1>
 
                 <div className="flex flex-row max-md:flex-col max-md:items-center 2xl:items-center ">
 
-                    <img src={sylvester} className="w-[410.9px] h-[427.7px] 2xl:w-[600px] 2xl:h-[500px] bg-slate-400 rounded max-md:hidden" />
+                    <img src={sylvester} className="w-[410.9px] h-[427.7px] 2xl:w-[660px] 2xl:h-[500px] bg-slate-400 rounded max-md:hidden" />
 
                     <div className="w-[597.5px] h-[427px] 2xl:h-[500px] 2xl:w-[770px] max-md:h-full max-md:gap-5 bg-[#3B4293] flex flex-col justify-center items-center max-md:w-full ">
 
                         <div className="h-full w-full flex flex-col justify-center items-center ">
-                            <p className="text-base w-[389.2px] 2xl:w-[400px] text-[#fff] flex items-start max-md:px-4 2xl:text-xl">
+                            <p className="text-base  w-[389.2px] 2xl:w-[500px] text-[#fff] flex items-start max-md:px-4 2xl:text-2xl">
                                 “Lorem ipsum dolor sit amet consectetur. Elit sit consequat sollicitudin eget faucibus facilisis et eu aenean.
                                 Consequat tellus bibendum imperdiet feugiat nunc. Massa adipiscing odio”
                             </p>
