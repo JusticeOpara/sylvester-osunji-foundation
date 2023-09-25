@@ -23,7 +23,7 @@ const Home = () => {
             exit={{ opacity: 0 }}
         >
 
-            <div className="relative h-[90vh] max-md:h-[50vh] w-full bg-[#000000]">
+            <div className="relative h-[90vh] 2xl:h-[100vh] max-md:h-[50vh] w-full bg-[#000000]">
 
                 <div className="absolute inset-0  bg-hero-pattern bg-no-repeat bg-cover opacity-50 z-10"></div>
 
@@ -84,7 +84,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="h-full w-full flex flex-row maxx-md:flex-col justify-center max-md:flex-col-reverse max-md:gap-5">
+                    <div className=" 2xl:mb-10 h-full w-full flex flex-row maxx-md:flex-col justify-center max-md:flex-col-reverse max-md:gap-5">
                         
                         <div className="w-[510px] 2xl:w-[709px] h-[366.1px] bg-whfite justify-evenly flex flex-col items-center max-md:w-full max-md:h-full">
 
@@ -105,23 +105,22 @@ const Home = () => {
 
                 <button className="bg-transparent font-semibold text-[#0098d8] py-2 px-4 wd-20 border-2 border-[#0098d8] rounded ">
                     Learn More
-
                 </button>
             </div>
 
 
-            <div className="w-full h-[120vh] max-md:h-full bg-[#F2EFEF] max-md:bg-[#3B4293] flex flex-col items-center justify-evenly max-md:gap-5 p-0">
+            <div className="w-full h-[120vh] 2xl:h-[90vh] max-md:h-full bg-[#F2EFEF] max-md:bg-[#3B4293]  flex flex-col items-center justify-evenly max-md:gap-5 p-0">
 
-                <h1 className="font-bold text-3xl max-md:text-xl font-openSan max-md:text-white max-md:pt-4">Founder's Note</h1>
+                <h1 className="font-bold text-[40px] max-md:text-xl font-openSan max-md:text-white max-md:pt-4">Founder's Note</h1>
 
-                <div className="flex flex-row max-md:flex-col max-md:items-center">
+                <div className="flex flex-row max-md:flex-col max-md:items-center 2xl:items-center ">
 
-                    <img src={sylvester} className="w-[410.9px] h-[427.7px] 2xl:w-[587px] 2xl:h-[500px] bg-slate-400 rounded max-md:hidden" />
+                    <img src={sylvester} className="w-[410.9px] h-[427.7px] 2xl:w-[600px] 2xl:h-[500px] bg-slate-400 rounded max-md:hidden" />
 
-                    <div className="w-[597.5px] h-[427px] 2xl:h-[500px] 2xl:w-[703px] max-md:h-full max-md:gap-5 bg-[#3B4293] flex flex-col justify-center items-center max-md:w-full ">
+                    <div className="w-[597.5px] h-[427px] 2xl:h-[500px] 2xl:w-[770px] max-md:h-full max-md:gap-5 bg-[#3B4293] flex flex-col justify-center items-center max-md:w-full ">
 
                         <div className="h-full w-full flex flex-col justify-center items-center ">
-                            <p className="text-base w-[389.2px] text-[#fff] flex items-start max-md:px-4 2xl:text-xl">
+                            <p className="text-base w-[389.2px] 2xl:w-[400px] text-[#fff] flex items-start max-md:px-4 2xl:text-xl">
                                 “Lorem ipsum dolor sit amet consectetur. Elit sit consequat sollicitudin eget faucibus facilisis et eu aenean.
                                 Consequat tellus bibendum imperdiet feugiat nunc. Massa adipiscing odio”
                             </p>
@@ -144,7 +143,7 @@ const Home = () => {
             <Carsousel />
 
             <div className="w-full h-[300px]  max-md:h-full max-md:gap-4 bg-whrite 2xl:px-20 px-28 max-md:px-4 max-md:py-4 flex flex-col justify-evenly  ">
-                <p className="font-bold text-2xl font-openSan max-md:text-lg 2xl:text-4xl">Upcoming SOF Events</p>
+                <p className="font-bold text-[40px] font-openSan max-md:text-lg 2xl:text-4xl">Upcoming SOF Events</p>
 
                 <div className="flex gap-4 text-black max-md:flex-col max-md:w-full 2xl:gap-10">
                     <div className="w-[546px] h-[140px] hover:shadow-xl shadow flex max-md:w-full max-md:h-[100px]">

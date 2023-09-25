@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
         <div className='w-full bg-white h-[80px] flex items-center font-inter fixed top-0 left-0 z-[111111] shadow' ref={headerRef}>
 
 
-            <div className='flex w-full justify-between px-28  max-md:px-0  items-center'>
+            <div className='flex w-full justify-between px-28 2xl:px-20 max-md:px-0 items-center'>
                 <div className='flex items-center gap-2 max-md:pl-2 '>
                     <img src={NavLogo} className='w-[40px] h-auto rounded-2xl max-md:w-[30px]' />
                     <Link to="/">
